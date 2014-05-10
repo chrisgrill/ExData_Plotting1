@@ -10,7 +10,7 @@ plot4<-function(){
     par(mfrow=c(2,2))
     #first plot Global active power
     plot(strptime(dtime,format="%d/%m/%Y %H:%M:%S"),feb[,3],type="l",
-         ylab="Global Active Power (kilowatts)",xlab="")
+         ylab="Global Active Power",xlab="")
     #second plot Voltage
     plot(strptime(dtime,format="%d/%m/%Y %H:%M:%S"),feb[,5],type="l",
          ylab="Voltage",xlab="datetime")
